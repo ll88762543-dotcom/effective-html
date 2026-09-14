@@ -1,17 +1,19 @@
 <p align="center">
-  <img src="./assets/effective-html-banner.png" width="1280" alt="Effective HTML by Plannotator — HTML 线框图、视觉稿、原型、图表和示意图">
+  <img src="./assets/effective-html-banner.png" width="1280" alt="Effective HTML by Plannotator：HTML 线框图、原型、图表和示意图">
 </p>
 
 # Effective HTML
 
-专注的AI agent技能，用于创建有用的、不依靠外部资源的 HTML 项目，从草图到可交互原型。
+[English](README.md)
 
-## 详细的输出 + 丰富上下文
+一组用于创建实用、自包含 HTML 成果的专用智能体技能，覆盖从低保真线框图到可交互原型。
 
-现代模型能力很强。如为它们提供充足的有效参考，并利用HTML示例来表达你的意图。HTML几乎可以可视化任何内容，且往往比一大段文字更清晰。你的提示词只需指向携带上下文的资源、仓库和文件夹即可。
+## 完整成果 + 充分上下文
 
+现代模型能完成很多工作。给它们提供有用的参考资料，并用成果展示你的意图。HTML 几乎可以呈现任何内容，而且往往比大段文字更清楚。提示词只需指向包含上下文的成果、仓库和文件夹。
 
-> 你无需安装任何东西即可使用本项目 可参阅它来学习什么是好的HTML
+> [!NOTE]
+> 不安装也能使用本仓库。先把它当作参考资料，需要时再安装为技能集。请参阅
 > [Effective HTML 指南](https://www.effectivehtml.com/)。
 
 https://github.com/user-attachments/assets/24306977-7f30-44c9-9bff-55f901d557b0
@@ -22,33 +24,33 @@ https://github.com/user-attachments/assets/24306977-7f30-44c9-9bff-55f901d557b0
   </a>
 </p>
 <p align="center">
-使用 <a href="https://github.com/backnotprop/plannotator">Plannotator</a> 渲染并标注本地的 HTML。
+使用 <a href="https://github.com/backnotprop/plannotator">Plannotator</a> 渲染并标注本地 HTML。
 </p>
 
-## skills参考
+## 技能参考
 
-本仓库包含六个可选的skill，用于创建实用的视觉项目。
+本仓库包含六个可选技能，用于创建实用的视觉成果。
 
-| skill | 用途 |
+| 技能 | 适用场景 |
 | --- | --- |
-| [`html`](skills/html/SKILL.md) | 广阔的 HTML 请求、报告、解说、演示、单页、工具，以及路由 专家技能 |
-| [`design-artifact`](skills/design-artifact/SKILL.md) | 为任意 HTML 项目提供面向主题的创作方向，而不套用ai 或大众化的既有风格 |
-| [`html-wireframe`](skills/html-wireframe/SKILL.md) | 简易布局方向，用于测试内容、层级、导航、流程和响应式结构 |
-| [`html-prototype`](skills/html-prototype/SKILL.md) | 具有真实状态、交互、键盘支持与响应式行为的复杂原型 |
-| [`html-plan`](skills/html-plan/SKILL.md) | 保留AI规划的方案 保证不会改变主意 |
-| [`html-diagram`](skills/html-diagram/SKILL.md) | 提供架构图、时序图、流程图、状态图、层级图、时间线图和系统图的支持 |
+| [`html`](skills/html/SKILL.md) | 处理范围较广的 HTML 请求、混合型成果、报告、说明文档、演示文稿、落地页和工具，并在需要时转交给专用技能 |
+| [`design-artifact`](skills/design-artifact/SKILL.md) | 为任何 HTML 成果提供贴合主题的创意方向，同时避免套用固定的视觉风格 |
+| [`html-wireframe`](skills/html-wireframe/SKILL.md) | 用低保真布局方案测试内容、层级、导航、流程和响应式结构 |
+| [`html-prototype`](skills/html-prototype/SKILL.md) | 创建包含真实状态、交互、键盘支持和响应式行为的可用原型 |
+| [`html-plan`](skills/html-plan/SKILL.md) | 创建计划、路线图、发布安排和实施步骤，同时保留源材料中的既定要求 |
+| [`html-diagram`](skills/html-diagram/SKILL.md) | 创建架构图、时序图、流程图、状态图、层级图、时间线图和系统图 |
 
-实用指南：[面向coding Agent的 HTML 线框图和演示](https://docs.plannotator.ai/learn/code-context/html-wireframes-and-prototypes-for-coding-agents)
+实用指南：[面向编程智能体的 HTML 线框图和原型](https://docs.plannotator.ai/learn/code-context/html-wireframes-and-prototypes-for-coding-agents)。
 
 ## 安装
 
-当你希望这些参考以可重复的工作流形式提供给智能体时，安装本集合：
+当你希望智能体把这些参考资料作为可复用的工作流使用时，安装整个技能集：
 
 ```bash
 npx skills add plannotator/effective-html
 ```
 
-列出或安装单个skill：
+列出或安装单个技能：
 
 ```bash
 npx skills add plannotator/effective-html --list
@@ -71,21 +73,21 @@ codex plugin marketplace add plannotator/effective-html
 codex plugin add plannotator-effective-html@effective-html
 ```
 
-## skill的工作原理
+## 技能如何协作
 
-这些skill将创作自由与可靠性分开：
+这些技能把创意自由和可靠性分开处理：
 
-- 视觉方向源自对话、项目、受众与主题。
-- `design-artifact` 提供一套可复用的设计流程，而不指定重复的视觉效果。
-- 线框图刻意保持简约，以便用户聚焦于结构。
-- 原型实现一条可行的流程及其相关状态。
-- 方案保留源自ai的承诺。
-- 示意图契合说明关系的可视化模型与渲染方式。
-- 每个项目均具有响应式 可行 自包含的特点，并经过浏览器验证。
+- 视觉方向来自对话、项目、受众和主题。
+- `design-artifact` 提供可复用的设计流程，但不规定重复使用的视觉风格。
+- 线框图刻意保持未完成感，让评审者专注于结构。
+- 原型实现一条可信的流程及其相关状态。
+- 计划保留源材料中的既定要求。
+- 示意图会选择适合所表达关系的视觉模型和渲染方式。
+- 每项成果都应具备响应式布局和无障碍支持，能够独立运行，并在浏览器中完成验证。
 
-详细指南只放在有需要的地方。广阔的 `html` skill负责路由工作，`design-artifact` 提供可选的创作方向，`plan`掌控保真。每个skill均可独立使用。
+详细指导只放在需要它的地方。通用的 `html` 技能负责分配工作，`design-artifact` 提供可选的创意方向，专用技能负责各自的保真度和行为要求。每个技能也可以独立使用。
 
-本项目深受 Thariq Shihipar 的 [HTML的通用性](https://thariqs.github.io/html-effectiveness) 启发。
+本项目的灵感来自 Thariq Shihipar 的 [The unreasonable effectiveness of HTML](https://thariqs.github.io/html-effectiveness)。
 
 <p align="center">
   <a href="https://github.com/plannotator/tot">

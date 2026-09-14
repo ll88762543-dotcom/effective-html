@@ -4,6 +4,8 @@
 
 # Effective HTML
 
+[简体中文](README.zh.md)
+
 Focused agent skills for creating useful, self-contained HTML artifacts, from low-fidelity wireframes to working interactive prototypes.
 
 ## Fat artifacts + fat context
